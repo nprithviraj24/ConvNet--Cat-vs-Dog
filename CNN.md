@@ -51,6 +51,7 @@ Example for Grayscale image:
 
 <br />
 <br />
+
 #### What is convolution layer, how is it different from normal Neural network? Explain with different parts in CNN.
 The main innovation of the convolutional neural network is the **Convolutional layer.** A convolution layer applies a set of **Sliding windows** across an image. These sliding windows are termed filters, and they detect different primitive shapes or patterns. The primary purpose of Convolution in case of a ConvNet is to **extract features** from the input image. 
 <br />
@@ -134,14 +135,9 @@ ReLU is an element wise operation (applied per pixel) and replaces all negative 
 
 ##### Depth :
  Depth corresponds to the number of filters we use for the convolution operation. In the network shown in Figure 7, we are performing convolution of the original boat image using three distinct filters, thus producing three different feature maps as shown. You can think of these three feature maps as stacked 2d matrices, so, the ‘depth’ of the feature map would be three.
-
 <br />
-
-
 ##### Stride: 
 Stride is the number of pixels by which we slide our filter matrix over the input matrix. When the stride is 1 then we move the filters one pixel at a time. When the stride is 2, then the filters jump 2 pixels at a time as we slide them around. Having a larger stride will produce smaller feature maps.
-
 <br />
-
 ##### Zero-padding:
  Sometimes, it is convenient to pad the input matrix with zeros around the border, so that we can apply the filter to bordering elements of our input image matrix. A nice feature of zero padding is that it allows us to control the size of the feature maps. Adding zero-padding is also called wide convolution, and not using zero-padding would be a narrow convolution. For illustration, 
