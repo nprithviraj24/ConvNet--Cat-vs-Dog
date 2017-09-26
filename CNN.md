@@ -96,10 +96,7 @@ There are four main operations in the ConvNet shown in Figure 3 above:
 ##### Convolution Layer
  Let's take a following example to explain convolution layer in practice, for educational purpose we are considering `grayscale` images only.
 <br /> 
-
-<p align="center">
-    <img src="https://ujwlkarn.files.wordpress.com/2016/08/giphy.gif">
-</p>
+![GIF](/giphy.gif)
 <br />
 
 A **filter** (with red outline) slides over the input image (convolution operation) to produce a feature map. The convolution of another filter (with the green outline), over the same image gives a different feature map as shown. It is important to note that the Convolution operation captures the local dependencies in the original image. Also notice how these two different filters generate different feature maps from the same original image. Remember that the image and the two filters above are just numeric matrices as we have discussed above.
