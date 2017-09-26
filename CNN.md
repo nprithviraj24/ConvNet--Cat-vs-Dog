@@ -1,21 +1,22 @@
 # Convolutional Neural Network
 Concoction of different articles based on Internet.
 
-## Prerequisites
-## Questions
-## Glossary
-## Additional Resources
+## Contents
+- [Prerequisites](https://github.com/nprithviraj24/ConvNet--Cat-vs-Dog/blob/master/CNN.md#prerequisites-1)
+- [Questions](https://github.com/nprithviraj24/ConvNet--Cat-vs-Dog/blob/master/CNN.md#questions-that-needs-to-be-answered)
+- [Glossary](https://github.com/nprithviraj24/ConvNet--Cat-vs-Dog/blob/master/CNN.md#glossary-1)
+- [Additional Resources]
 
 
-### Prerequisites
+#### Prerequisites
 - Basic understanding of Neural Networks.
 - Decent programming skills in Python.
 - Flexibility with Deep Learning frameworks.
 
-### Questions that needs to be answered:
-- Why CNN(or ConvNet)?
-- What are images, what do they consist of?
-- What is convolution layer, how is it different from normal Neural network? 
+#### Questions that needs to be answered:
+- [Why CNN(or ConvNet)?](https://github.com/nprithviraj24/ConvNet--Cat-vs-Dog/blob/master/CNN.md#what-is-convolutional-neural-networkcnn-and-why-do-we-need-it)
+- [What are images, what do they consist of?](https://github.com/nprithviraj24/ConvNet--Cat-vs-Dog/blob/master/CNN.md#what-are-images-what-do-they-consist-of)
+- [What is convolution layer, how is it different from normal Neural network?](https://github.com/nprithviraj24/ConvNet--Cat-vs-Dog/blob/master/CNN.md#what-is-convolution-layer-how-is-it-different-from-normal-neural-network-explain-with-different-parts-in-cnn) 
 - Since its same as Neural Networks, what are different layers that are involved in CNN?
 - What are pooling layers?
 - What are normalization layer?
@@ -51,6 +52,7 @@ Example for Grayscale image:
 
 <br />
 <br />
+
 #### What is convolution layer, how is it different from normal Neural network? Explain with different parts in CNN.
 The main innovation of the convolutional neural network is the **Convolutional layer.** A convolution layer applies a set of **Sliding windows** across an image. These sliding windows are termed filters, and they detect different primitive shapes or patterns. The primary purpose of Convolution in case of a ConvNet is to **extract features** from the input image. 
 <br />
@@ -96,7 +98,7 @@ There are four main operations in the ConvNet shown in Figure 3 above:
 <br /> 
 
 <p align="center">
-    <img src="https://ujwlkarn.files.wordpress.com/2016/08/giphy.gif?w=748">
+    <img src="https://ujwlkarn.files.wordpress.com/2016/08/giphy.gif">
 </p>
 <br />
 
@@ -134,14 +136,11 @@ ReLU is an element wise operation (applied per pixel) and replaces all negative 
 
 ##### Depth :
  Depth corresponds to the number of filters we use for the convolution operation. In the network shown in Figure 7, we are performing convolution of the original boat image using three distinct filters, thus producing three different feature maps as shown. You can think of these three feature maps as stacked 2d matrices, so, the ‘depth’ of the feature map would be three.
-
 <br />
-
-
 ##### Stride: 
 Stride is the number of pixels by which we slide our filter matrix over the input matrix. When the stride is 1 then we move the filters one pixel at a time. When the stride is 2, then the filters jump 2 pixels at a time as we slide them around. Having a larger stride will produce smaller feature maps.
-
 <br />
-
 ##### Zero-padding:
  Sometimes, it is convenient to pad the input matrix with zeros around the border, so that we can apply the filter to bordering elements of our input image matrix. A nice feature of zero padding is that it allows us to control the size of the feature maps. Adding zero-padding is also called wide convolution, and not using zero-padding would be a narrow convolution. For illustration, 
+
+
