@@ -1,21 +1,22 @@
 # Convolutional Neural Network
 Concoction of different articles based on Internet.
 
-## Prerequisites
-## Questions
-## Glossary
-## Additional Resources
+## Contents
+- [Prerequisites](https://github.com/nprithviraj24/ConvNet--Cat-vs-Dog/blob/master/CNN.md#prerequisites-1)
+- [Questions](https://github.com/nprithviraj24/ConvNet--Cat-vs-Dog/blob/master/CNN.md#questions-that-needs-to-be-answered)
+- [Glossary](https://github.com/nprithviraj24/ConvNet--Cat-vs-Dog/blob/master/CNN.md#glossary-1)
+- [Additional Resources]
 
 
-### Prerequisites
+#### Prerequisites
 - Basic understanding of Neural Networks.
 - Decent programming skills in Python.
 - Flexibility with Deep Learning frameworks.
 
-### Questions that needs to be answered:
-- Why CNN(or ConvNet)?
-- What are images, what do they consist of?
-- What is convolution layer, how is it different from normal Neural network? 
+#### Questions that needs to be answered:
+- [Why CNN(or ConvNet)?](https://github.com/nprithviraj24/ConvNet--Cat-vs-Dog/blob/master/CNN.md#what-is-convolutional-neural-networkcnn-and-why-do-we-need-it)
+- [What are images, what do they consist of?](https://github.com/nprithviraj24/ConvNet--Cat-vs-Dog/blob/master/CNN.md#what-are-images-what-do-they-consist-of)
+- [What is convolution layer, how is it different from normal Neural network?](https://github.com/nprithviraj24/ConvNet--Cat-vs-Dog/blob/master/CNN.md#what-is-convolution-layer-how-is-it-different-from-normal-neural-network-explain-with-different-parts-in-cnn) 
 - Since its same as Neural Networks, what are different layers that are involved in CNN?
 - What are pooling layers?
 - What are normalization layer?
@@ -97,7 +98,7 @@ There are four main operations in the ConvNet shown in Figure 3 above:
 <br /> 
 
 <p align="center">
-    <img src="https://ujwlkarn.files.wordpress.com/2016/08/giphy.gif?w=748">
+    <img src="https://ujwlkarn.files.wordpress.com/2016/08/giphy.gif">
 </p>
 <br />
 
@@ -141,3 +142,5 @@ Stride is the number of pixels by which we slide our filter matrix over the inpu
 <br />
 ##### Zero-padding:
  Sometimes, it is convenient to pad the input matrix with zeros around the border, so that we can apply the filter to bordering elements of our input image matrix. A nice feature of zero padding is that it allows us to control the size of the feature maps. Adding zero-padding is also called wide convolution, and not using zero-padding would be a narrow convolution. For illustration, 
+
+
