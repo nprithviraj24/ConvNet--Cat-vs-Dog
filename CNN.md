@@ -1,5 +1,5 @@
 # Convolutional Neural Network
-Concoction of different articles based on Internet.
+Concoction of different articles based on ConvNet.
 
 ## Contents
 - [Prerequisites](https://github.com/nprithviraj24/ConvNet--Cat-vs-Dog/blob/master/CNN.md#prerequisites-1)
