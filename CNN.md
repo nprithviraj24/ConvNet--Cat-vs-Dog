@@ -5,7 +5,7 @@ Concoction of different articles based on Internet.
 - [Prerequisites](https://github.com/nprithviraj24/ConvNet--Cat-vs-Dog/blob/master/CNN.md#prerequisites-1)
 - [Questions](https://github.com/nprithviraj24/ConvNet--Cat-vs-Dog/blob/master/CNN.md#questions-that-needs-to-be-answered)
 - [Glossary](https://github.com/nprithviraj24/ConvNet--Cat-vs-Dog/blob/master/CNN.md#glossary-1)
-- [Additional Resources]
+- [Additional Resources]()
 
 
 #### Prerequisites
@@ -138,6 +138,14 @@ ReLU is an element wise operation (applied per pixel) and replaces all negative 
 Stride is the number of pixels by which we slide our filter matrix over the input matrix. When the stride is 1 then we move the filters one pixel at a time. When the stride is 2, then the filters jump 2 pixels at a time as we slide them around. Having a larger stride will produce smaller feature maps.
 <br />
 ##### Zero-padding:
- Sometimes, it is convenient to pad the input matrix with zeros around the border, so that we can apply the filter to bordering elements of our input image matrix. A nice feature of zero padding is that it allows us to control the size of the feature maps. Adding zero-padding is also called wide convolution, and not using zero-padding would be a narrow convolution. For illustration, 
+ Sometimes, it is convenient to pad the input matrix with zeros around the border, so that we can apply the filter to bordering elements of our input image matrix. A nice feature of zero padding is that it allows us to control the size of the feature maps. Adding zero-padding is also called wide convolution, and not using zero-padding would be a narrow convolution.
+ 
+ ## Additional resources.
+ 
+ - [CNN for Dummies](https://medium.com/technologymadeeasy/for-dummies-the-introduction-to-neural-networks-we-all-need-c50f6012d5eb)
+ - [Most comprehensive guide for CNN](http://cs231n.github.io/convolutional-networks/)
+ - [Backpropogation in Convolutional Neural Network](http://jefkine.com/general/2016/09/05/backpropagation-in-convolutional-neural-networks/)
+ - [TensorFlow implementation](http://www.subsubroutine.com/sub-subroutine/2016/9/30/cats-and-dogs-and-convolutional-neural-networks)
+ 
 
 
