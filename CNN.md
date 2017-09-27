@@ -5,7 +5,7 @@ Concoction of different articles based on Internet.
 - [Prerequisites](https://github.com/nprithviraj24/ConvNet--Cat-vs-Dog/blob/master/CNN.md#prerequisites-1)
 - [Questions](https://github.com/nprithviraj24/ConvNet--Cat-vs-Dog/blob/master/CNN.md#questions-that-needs-to-be-answered)
 - [Glossary](https://github.com/nprithviraj24/ConvNet--Cat-vs-Dog/blob/master/CNN.md#glossary-1)
-- [Additional Resources]()
+- [Additional Resources](https://github.com/nprithviraj24/ConvNet--Cat-vs-Dog/blob/master/CNN.md#additional-resources)
 
 
 #### Prerequisites
@@ -107,26 +107,6 @@ In practice, a CNN learns the values of these filters on its own during the trai
 ##### Introduction to Non-Linearity:
 
 ReLU is an element wise operation (applied per pixel) and replaces all negative pixel values in the feature map by zero. The purpose of ReLU is to introduce **non-linearity** in our ConvNet, since most of the real-world data we would want our ConvNet to learn would be non-linear (Convolution is a linear operation – element wise matrix multiplication and addition, so we account for non-linearity by introducing a non-linear function like ReLU).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ## Glossary
