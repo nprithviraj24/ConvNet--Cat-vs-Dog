@@ -53,7 +53,7 @@ Example for Grayscale image:
 <br />
 <br />
 
-#### What is convolution layer, how is it different from normal Neural network? Explain with different parts in CNN.
+#### What is convolution layer, how is it different from normal Neural network?
 The main innovation of the convolutional neural network is the **Convolutional layer.** A convolution layer applies a set of **Sliding windows** across an image. These sliding windows are termed filters, and they detect different primitive shapes or patterns. The primary purpose of Convolution in case of a ConvNet is to **extract features** from the input image. 
 <br />
 <p align="center">
