@@ -126,7 +126,34 @@ ReLU is an element wise operation (applied per pixel) and replaces all negative 
 
 After obtaining features using convolution, we would next like to use them for classification. In theory, one could use all the extracted features with a classifier such as a softmax classifier, but this can be computationally challenging. Consider for instance images of size 96x96 pixels, and suppose we have learned 400 features over 8x8 inputs. Each convolution results in an output of size (96−8+1)∗(96−8+1)=7921(96−8+1)∗(96−8+1)=7921, and since we have 400 features, this results in a vector of 892∗400=3,168,400892∗400=3,168,400 features per example. Learning a classifier with inputs having 3+ million features can be unwieldy, and can also be prone to over-fitting.
 
-To address this, first recall that we decided to obtain convolved features because images have the “stationarity” property, which implies that features that are useful in one region are also likely to be useful for other regions. Thus, to describe a large image, one natural approach is to aggregate statistics of these features at various locations. For example, one could compute the mean (or max) value of a particular feature over a region of the image. These summary statistics are much lower in dimension (compared to using all of the extracted features) and can also improve results (less over-fitting). We aggregation operation is called this operation ”‘pooling”’, or sometimes ”‘mean pooling”’ or ”‘max pooling”’ (depending on the pooling operation applied).
+To address this, first recall that we decided to obtain convolved features because images have the “stationarity” property, which implies that features that are useful in one region are also likely to be useful for other regions. Thus, to describe a large image, one natural approach is to aggregate statistics of these features at various locations. For example, one could compute the mean (or max) value of a particular feature over a region of the image. These summary statistics are much lower in dimension (compared to using all of the extracted features) and can also improve results (less over-fitting). We aggregation operation is called this operation ”‘pooling”’, or sometimes ”‘mean pooling”’ or ”‘max pooling”’ (depending on the pooling operation applied)..
+
+##### Padding
+
+Now, let’s take a look at padding. Before getting into that, let’s think about a scenario. What happens when you apply three 5 x 5 x 3 filters to a 32 x 32 x 3 input volume? The output volume would be 28 x 28 x 3. Notice that the spatial dimensions decrease. As we keep applying conv layers, the size of the volume will decrease faster than we would like. In the early layers of our network, we want to preserve as much information about the original input volume so that we can extract those low level features. Let’s say we want to apply the same conv layer but we want the output volume to remain 32 x 32 x 3. To do this, we can apply a zero padding of size 2 to that layer. Zero padding pads the input volume with zeros around the border. If we think about a zero padding of two, then this would result in a 36 x 36 x 3 input volume.
+
+<p align="center">
+    <img src="https://adeshpande3.github.io/assets/Pad.png">
+</p>
+<br />
+
+If you have a stride of 1 and if you set the size of zero padding to
+
+<p align="center">
+ <img src="https://adeshpande3.github.io/assets/ZeroPad.png">
+</p>
+<br />
+where K is the filter size, then the input and output volume will always have the same spatial dimensions.
+
+The formula for calculating the output size for any given conv layer is
+
+<p align="center">
+ <img src="https://adeshpande3.github.io/assets/Output.png">
+</p>
+<br /> 
+where O is the output height/length, W is the input height/length, K is the filter size, P is the padding, and S is the stride.
+<br />
+
 
 
 ## Glossary
