@@ -1,7 +1,15 @@
+'''
+NOTE: This classifier can only achieve upto 80% accuracy. A good model, if you are getting started with CNN and using Keras. 
+
+To be done: Import matplotlib and visualise the error for every epoch.
+
+'''
 '''This script goes along the blog post
 "Building powerful image classification models using very little data"
 from blog.keras.io.
 It uses data that can be downloaded at:
+
+
 https://www.kaggle.com/c/dogs-vs-cats/data
 In our setup, we:
 - created a data/ folder
@@ -12,6 +20,8 @@ In our setup, we:
 - put the dogs pictures index 12500-13499 in data/train/dogs
 - put the dog pictures index 13500-13900 in data/validation/dogs
 So that we have 1000 training examples for each class, and 400 validation examples for each class.
+
+
 In summary, this is our directory structure:
 ```
 data/
@@ -114,7 +124,7 @@ model.fit_generator(
 
 model.save_weights('first_try.h5')
 '''
-Weights will be saved in first_try.h5 file.  
+Weights will be saved in 'first_try.h5' file.  
 
 Please download the h5py for python from pip.
 '''
