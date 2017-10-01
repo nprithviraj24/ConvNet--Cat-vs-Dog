@@ -113,3 +113,9 @@ model.fit_generator(
     validation_steps=nb_validation_samples // batch_size)
 
 model.save_weights('first_try.h5')
+'''
+Weights will be saved in first_try.h5 file.  
+
+Please download the h5py for python from pip.
+'''
+
